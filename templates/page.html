@@ -21,23 +21,24 @@
         </p>
         </div>
         <form id="form" action = "/" method = "POST" enctype="multipart/form-data">
-            <div>
+            <div class=main>
                 <canvas id="canvas" width="300px" height="300px">
                     ブラウザがCanvasに対応していません
                 </canvas>
                 </div>
+
+              <div class=main2>
                 <input type="hidden" id="img" name="img">
                 <input type="button" id="clear" value="全消し">
                 <input type="button" id="execute" value="実行">
-                <div>
                     <canvas id="hiddenCanvas" width="300px" height="300px" style="display: none;">
                     </canvas>
              </div>
-             <p class="result">{{text}}</p>
+             <p>{{text}}</p>
         </form>
         <footer>
             <p><small>&copy; Copyright 2021 SOMA ADF Group3</small></p>
         </footer>
-        
+
     </body>
 </html>
