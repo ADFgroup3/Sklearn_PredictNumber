@@ -1,11 +1,32 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topNavigation{
+    height: 70px;
+    text-align: center;
+    background-color: #888;
+    color: #fff;
+    }
+
+.content{
+    flex: 1;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 10px;
+}
+
 canvas{
     border: 1px solid #000000;    
     touch-action: none;
-}
+    }
+
 footer {
     background: #333333;
     color: #ffffff;
     text-align: center;
     padding: 26px 0;
     font-size: 0.75rem;
-  }
+    }
