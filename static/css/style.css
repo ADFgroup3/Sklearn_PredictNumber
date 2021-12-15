@@ -35,9 +35,9 @@ form {
 }
 
 .main2{
-    text-align: center;
-    background-color: #888;
-    color: #fff;
+    text-align: left;
+    background-color: #eee;
+    color: #111;
     width: 250px;
 }
 
