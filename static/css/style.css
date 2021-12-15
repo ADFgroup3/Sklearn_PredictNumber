@@ -23,7 +23,7 @@ body{
 form {
     background-color: #eee;
     display: flex;
-    min-height: 40vh;
+    min-height: 45vh;
     margin: 0px;
     width: 100%;
 }
