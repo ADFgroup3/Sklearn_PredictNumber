@@ -5,11 +5,11 @@ body{
 }
 
 .topNavigation{
-    height: 70px;
+    height: 65px;
     text-align: center;
     background-color: #888;
     color: #fff;
-    padding: 20px 0;
+    padding: 18px 0;
     font-size: 0.75rem;
     }
 
@@ -54,7 +54,7 @@ footer {
     background: #111111;
     color: #fff;
     text-align: center;
-    height: 70px;
-    padding: 26px 0;
+    height: 65px;
+    padding: 18px 0;
     font-size: 0.75rem;
     }
