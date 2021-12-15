@@ -5,12 +5,12 @@ body{
 }
 
 .topNavigation{
-    height: 80px;
+    height: 70px;
     text-align: center;
-    background-color: #4689FF;
+    background-color: #888;
     color: #fff;
     padding: 26px 0;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     }
 
 .content{
@@ -21,19 +21,19 @@ body{
 }
 
 form {
-    background-color: #BAD3FF;
+    background-color: #eee;
 }
 
 canvas{
-    border: 1px solid #000000;    
+    border: 1px solid #111111;    
     touch-action: none;
     }
 
 footer {
-    background: #4689FF;
+    background: #111111;
     color: #fff;
     text-align: center;
-    height: 80px;
+    height: 70px;
     padding: 26px 0;
     font-size: 0.75rem;
     }
