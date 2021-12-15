@@ -25,13 +25,15 @@ form {
     display: flex;
     min-height: 45vh;
     margin: 0px;
+    width: 100%;
 }
 
 .main{
     flex: 1;
     background-color: #eee;
     text-align: right;
-    margin-right: 0px;
+    margin-right: 20px;
+    width: 50%;
 }
 
 .main2{
@@ -39,6 +41,8 @@ form {
     background-color: #eee;
     color: #111;
     width: 250px;
+    margin-left: 20px;
+    width: 50%;
 }
 
 canvas{
