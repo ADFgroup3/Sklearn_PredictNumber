@@ -9,33 +9,35 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
         <!-- JavaScript -->
         <script type="text/JavaScript" src="{{ url_for('static', filename='js/canvas.js') }}"></script>
+    </head>
 
     <body>
         <header class="topNavigation">
-          <h2>ADFGroup3<br>~チーム気が合う~</h2>
+            <h2>ADFGroup3<br>~チーム気が合う~</h2>
         </header>
+        
         <div class="content">
-        <h1>画像から数字の認識</h1>
-        <p>
-            1から9の数字を描画エリアに書いて実行すると数字を予測して表示します。
-        </p>
+            <h1>画像から数字の認識</h1>
+            <p>1から9の数字を描画エリアに書いて実行すると数字を予測して表示します。</p>
         </div>
+        
         <form id="form" action = "/" method = "POST" enctype="multipart/form-data">
             <div class=main>
                 <canvas id="canvas" width="300px" height="300px">
                     ブラウザがCanvasに対応していません
                 </canvas>
-                </div>
+            </div>
 
-              <div class=main2>
+            <div class=main2>
                 <input type="hidden" id="img" name="img">
                 <input type="button" id="clear" value="全消し">
                 <input type="button" id="execute" value="実行">
                     <canvas id="hiddenCanvas" width="300px" height="300px" style="display: none;">
                     </canvas>
-             </div>
-             <p>{{text}}</p>
+                <p>{{text}}</p>
+            </div>
         </form>
+        
         <footer>
             <p><small>&copy; Copyright 2021 SOMA ADF Group3</small></p>
         </footer>
