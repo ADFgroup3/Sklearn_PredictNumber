@@ -30,7 +30,7 @@ form {
 .main{
     flex: 1;
     background-color: #eee;
-    text-align: center;
+    text-align: right;
     margin-right: 0px;
 }
 
