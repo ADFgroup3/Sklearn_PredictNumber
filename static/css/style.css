@@ -9,7 +9,7 @@ body{
     text-align: center;
     background-color: #888;
     color: #fff;
-    padding: 23px 0;
+    padding: 20px 0;
     font-size: 0.75rem;
     }
 
@@ -23,7 +23,7 @@ body{
 form {
     background-color: #eee;
     display: flex;
-    min-height: 45vh;
+    min-height: 40vh;
     margin: 0px;
     width: 100%;
 }
