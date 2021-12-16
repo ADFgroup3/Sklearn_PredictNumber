@@ -56,7 +56,8 @@ window.addEventListener("load", () => {
 
     //クリアボタンの処理
     function clear() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'rgb(255, 255, 255)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
         frameP.x0 = null;
         frameP.y0 = null;
         frameP.x1 = null;
