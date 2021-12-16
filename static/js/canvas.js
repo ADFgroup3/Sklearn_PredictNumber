@@ -99,14 +99,21 @@ window.addEventListener("load", () => {
     });
     function CanvasToImage(){
         //クロップの位置を中心に調整
-        const lengthX = frameP.x1 - frameP.x0;
-        const lengthY = frameP.y1 - frameP.y0;
-        if(lengthX > lengthY){
-            frameP.y1 = lengthY / 2 + frameP.y0 + lengthX / 2;
-            frameP.y0 = lengthY / 2 + frameP.y0 - lengthX / 2;
+        if(frameP.x1 === null){
+            frameP.x0 = 0;
+            frameP.y0 = 0;
+            frameP.x1 = canvas.width;
+            frameP.y1 = canvas.height;
         }else{
-            frameP.x1 = lengthX / 2 + frameP.x0 + lengthY / 2;
-            frameP.x0 = lengthX / 2 + frameP.x0 - lengthY / 2;
+            const lengthX = frameP.x1 - frameP.x0;
+            const lengthY = frameP.y1 - frameP.y0;
+            if(lengthX > lengthY){
+                frameP.y1 = lengthY / 2 + frameP.y0 + lengthX / 2;
+                frameP.y0 = lengthY / 2 + frameP.y0 - lengthX / 2;
+            }else{
+                frameP.x1 = lengthX / 2 + frameP.x0 + lengthY / 2;
+                frameP.x0 = lengthX / 2 + frameP.x0 - lengthY / 2;
+            }
         }
         //描画パスを作成
         const newPath = new Path2D();
