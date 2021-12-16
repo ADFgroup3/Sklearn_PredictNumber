@@ -45,6 +45,13 @@ form {
     width: 45%;
 }
 
+@media screen and (max-width:600px){
+ /*画面幅が600pxまでの時*/
+form{
+    flex-flow: column;
+}
+}
+
 canvas{
     border: 1px solid #111111;    
     touch-action: none;
